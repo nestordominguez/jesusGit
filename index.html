@@ -1,210 +1,82 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Cajal Kids - Ayuda al niño</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="index.css">
-	<link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Philosopher:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<title>Arrays</title>
+	<link rel="stylesheet" href="cecili.css">
 </head>
+
+
 <body>
-	<header>
-		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
-						<span class="sr-only">Desplegar / Ocultar Menu</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="#" class="navbar-brand fontSubName"> Ezequiel Cajal	</a>
-				</div>
-				<!-- Inicia Menu -->
-				<div class="collapse navbar-collapse" id="navegacion-fm">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Inicio</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-								Categorias <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">Categoria #1</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Categoria #2</a></li>
-								<li><a href="#">Categoria #3</a></li>
-								<li><a href="#">Categoria #4</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contacto</a></li>
-					</ul>
-
-					<form action="" class="navbar-form navbar-right" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="buscar">
-						</div>
-						<button type="submit" class="btn btn-primary">
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</form>
-				</div>
-			</div>
-		</nav>
-	</header>
-
-	<section class="jumbotron">
-		<div class="container">
-			<h1 class="fontName"> Cajal KIDS </h1>
-			<p class="fontSubName">Blog de ayuda humanitaria</p>
-		</div>
-	</section>
-
-	<section class="main container">
-			<div class="row">	
-					<section class="post col-md-9">
-							<div class="migasDePan">	
-									<ol class="breadcrumb">	
-											<li><a href="">Inicio</a></li>
-											<li><a href="">Categorias</a></li>
-											<li  class="active">Contacto</li>
-									</ol>
-							</div>
-
-							<article class="post clearfix ">
-								<a href="" class="pull-left">
-									<img class="img-thumbnail" src="image/img1.jpg" alt="">
-								</a>
-								<h2>
-									<a href="#" class="post-title">Ayude a quiene mas lo necesita</a>
-								</h2>
-								<p><span class="post-fecha">28 de Junio del 2016</span> por <span class="post-autor"><a href="#"> Ezequiel Cajal</a></span></p>
-								<p class="post-contenido text-justify">
-									Uno de los principales desafios que enfrentan los niños hoy en dia, es el maltrato, social, psicologico, temporal y moral. A lo cual muchas voces en el mundo advierten de la necesidad que tenemos de tomar conciencia, a fin de poder prestar ayuda inmediata a nuestros pequeños.
-									Con el objeto de satisfacer las necesidades primarias temporales, a saber alimentos y ropa, es que comence esta campañia con el fin de llegar a ser una fundacion sin fines de lucro, el unico fin sera la Caridad!
+		<form action="" align="center" >
+			
+			<p id="textoPantalla">0</p>
+			<br><br>
+			<button onclick="numero('1')" value="1">1</button>			
+			<button onclick="numero('2')" value="2">2</button>			
+			<button onclick="numero('3')" value="3">3</button>
+			<br><br>
+			<button onclick="numero('4')" value="4">4</button>			
+			<button onclick="numero('5')" value="5">5</button>	
+			<button onclick="numero('6')" value="6">6</button>
+			<br><br>			
+			<button onclick="numero('7')" value="7">7</button>
+			<button onclick="numero('8')" value="8">8</button>			
+			<button onclick="numero('9')" value="9">9</button>	
+			<br><br>		
+			<button onclick="numero('0')" value="0">0</button>
+			<button onclick="operar('+')" value="+">+</button>
+			<button onclick="operar('=')" value="=">=</button>
 
 
-								</p>
-								<div class="contenedor-botones">
-									<a href="" class="btn btn-primary">Leer Mas</a>
-									<a href="" class="btn btn-success">Comentarios <span class="badge"></span></a>
 
-								</div>
-							</article>	
-
-							<article class="post clearfix ">
-								<a href="" class="pull-left">
-									<img class="img-thumbnail" src="image/img2.jpg" alt="">
-								</a>
-								<h2>
-									<a href="#" class="post-title">Ayude a quiene mas lo necesita</a>
-								</h2>
-								<p><span class="post-fecha">28 de Junio del 2016</span> por <span class="post-autor"><a href="#"> Ezequiel Cajal</a></span></p>
-								<p class="post-contenido text-justify">
-									Uno de los principales desafios que enfrentan los niños hoy en dia, es el maltrato, social, psicologico, temporal y moral. A lo cual muchas voces en el mundo advierten de la necesidad que tenemos de tomar conciencia, a fin de poder prestar ayuda inmediata a nuestros pequeños.
-									Con el objeto de satisfacer las necesidades primarias temporales, a saber alimentos y ropa, es que comence esta campañia con el fin de llegar a ser una fundacion sin fines de lucro, el unico fin sera la Caridad!
-
-					
-								</p>
-								<div class="contenedor-botones">
-									<a href="" class="btn btn-primary">Leer Mas</a>
-									<a href="" class="btn btn-success">Comentarios <span class="badge"></span></a>
-
-								</div>
-							</article>	
-
-							<article class="post clearfix ">
-								<a href="" class="pull-left">
-									<img class="img-thumbnail" src="image/img3.jpg" alt="">
-								</a>
-								<h2>
-									<a href="#" class="post-title">Ayude a quiene mas lo necesita</a>
-								</h2>
-								<p><span class="post-fecha">28 de Junio del 2016</span> por <span class="post-autor"><a href="#"> Ezequiel Cajal</a></span></p>
-								<p class="post-contenido text-justify">
-									Uno de los principales desafios que enfrentan los niños hoy en dia, es el maltrato, social, psicologico, temporal y moral. A lo cual muchas voces en el mundo advierten de la necesidad que tenemos de tomar conciencia, a fin de poder prestar ayuda inmediata a nuestros pequeños.
-									Con el objeto de satisfacer las necesidades primarias temporales, a saber alimentos y ropa, es que comence esta campañia con el fin de llegar a ser una fundacion sin fines de lucro, el unico fin sera la Caridad!
-
-					
-								</p>
-								<div class="contenedor-botones">
-									<a href="" class="btn btn-primary">Leer Mas</a>
-									<a href="" class="btn btn-success">Comentarios <span class="badge"></span></a>
-
-								</div>
-							</article>	
-							<nav>
-								<div class="center-block">
-									<ul class="pagination">
-										<li class="disabled"><a href="#">&laquo;<span class="sr-only">Anterior</span></a></li>
-										<li class="active"><a href="#">1</a></li>
-										<li>
-											<a href="#">1</a>
-											<a href="#">2</a>
-											<a href="#">3</a>
-											<a href="#">4</a>
-											<a href="#">5</a>
-											<li><a href="">&raquo; <span class="sr-only">Siguiente</span></a></li>
-										</li>
-									</ul>
-								</div>
-							</nav>
-					</section>
-			</div>
-		
-	</section>
-
-			<aside class="col-md-3 hidden-xs hidden-sm">
-				<h4>Categorias</h4>
-				<div class="list-group">
-					<a href="#" class="list-group-item active">Diseño Web</a>
-					<a href="#" class="list-group-item">CSS</a>
-					<a href="#" class="list-group-item">Cursos</a>
-					<a href="#" class="list-group-item">Desarrollo Web</a>
-					<a href="#" class="list-group-item">Elementos Web</a>
-					<a href="#" class="list-group-item">Jquery</a>
-					<a href="#" class="list-group-item">Recursos y Herramientas</a>
-				</div>
-
-				<h4>Articulos Recientes</h4>
-				<a href="#" class="list-group-item">
-					<h4 class="list-group-item-heading">Inicia proyectos HTML5 mas rápido con Initializr</h4>
-					<p class="list-group-item-text">Aprende como iniciar un proyecto HTML5 en 15 minutos con Initialzr.</p>
-				</a>
-
-				<a href="#" class="list-group-item">
-					<h4 class="list-group-item-heading">Como hacer una plantilla básica con PHP (templates)</h4>
-					<p class="list-group-item-text">LoremAprende como transformar tu diseño web en una plantilla dinámica con PHP.</p>
-				</a>
-
-				<a href="#" class="list-group-item">
-					<h4 class="list-group-item-heading">Como cambiar el cursor de tu sitio web con propiedad CSS</h4>
-					<p class="list-group-item-text">Aprende como cambiar el cursor de los elementos de tu sitio web con CSS.</p>
-				</a>
-			</aside>
-		</div>
-	</section>
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-6">
-					<p>Carlos Arturo - FalconMasters</p>
-				</div>
-				<div class="col-xs-6">
-					<ul class="list-inline text-right">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Cursos</a></li>
-						<li><a href="#">Contacto</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+		</form>	
+	
 </body>
+
+	<script>
+     window.onload = function(){
+     pantalla = document.getElementById('textoPantalla');	
+     }
+
+     	x="0"; //guardar número en pantalla
+		xi=1; //iniciar número en pantalla: 1=si; 0=no;
+		coma=0; //estado coma decimal 0=no, 1=si;
+
+     function numero(xx) {  		//recoge el número pulsado en el argumento.
+         if (x=="0" || xi==1  ) {  // inicializar un número, 
+            		pantalla.innerHTML=xx; //mostrar en pantalla
+            		x=xx; //guardar número;
+            }
+         		else { //continuar un número
+            		pantalla.innerHTML+=xx; //añadimos y mostramos en pantalla.
+           			 x+=xx; //añadimos y guardamos
+            }
+         		xi=0 //el número está iniciado y podemos ampliarlo.
+         }	
+					
+	</script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
