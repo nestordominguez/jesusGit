@@ -1,0 +1,46 @@
+form{
+	margin-left: 400px;
+	margin-top: 200px;
+	width: 200px;
+	height: 300px;
+	border: 3px solid black;
+	background-color: #000;
+	-webkit-box-shadow: 13px -5px 20px 2px rgba(161,148,161,0.67);
+	-moz-box-shadow: 13px -5px 20px 2px rgba(161,148,161,0.67);
+	box-shadow: 13px -5px 20px 2px rgba(161,148,161,0.67);
+
+}
+
+input{
+	height: 45px;
+	border: 3px solid black;
+	margin-top: 20px;
+	background-color: #8af2c0;
+}
+
+button{
+
+	color: white;
+	background-color: black;
+	width: 40px;
+	height: 30px;	
+	border: 1px solid purple;
+	-webkit-box-shadow: 13px -5px 20px 2px rgba(161,148,161,0.67);
+	-moz-box-shadow: 13px -5px 20px 2px rgba(161,148,161,0.67);
+	box-shadow: 13px -5px 20px 2px rgba(161,148,161,0.67);
+
+
+}
+#textoPantalla { 
+	width: 185px;
+	height: 50px;
+	border: 2px black solid; 
+	text-align: right; 
+    position: relative;
+    padding: 0px 5px;
+    background-color: white;
+    font-family: "courier new";
+    font-size: 30px; 
+    overflow: hidden;
+    margin-bottom: 0;
+}
